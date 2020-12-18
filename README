@@ -1,0 +1,37 @@
+file, _ := ioutil.ReadFile("./dayXXinput")
+d := strings.Split(string(file), "\n")
+
+switch part {
+case 1:
+    fmt.Printf("Reuslt: %v\n", DayXXPart1(d))
+case 2:
+    fmt.Printf("Reuslt: %v\n", DayXXPart2(d))
+}
+
+// DayXXPart1 good
+func DayXXPart1(input []string) int {
+	result := 0
+	return result
+}
+// DayXXPart2 good
+func DayXXPart2(input []string) int {
+	result := 0
+	return result
+}
+
+
+func TestDayXXp1(t *testing.T) {
+	d := []string{
+	}
+	if got := DayXXPart1(d); got != 0  {
+		t.Errorf("DayXXPart1() = %v", got)
+	}
+}
+
+func TestDayXXp2(t *testing.T) {
+	d := []string{
+	}
+	if got := DayXXPart2(d); got != 0  {
+		t.Errorf("DayXXPart2() = %v", got)
+	}
+}
