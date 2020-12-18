@@ -48,6 +48,10 @@ touch cmd/dayXX_test.go
 
 #### content of test file
 ```go
+package cmd
+
+import "testing"
+
 func TestDayXXp1(t *testing.T) {
 	d := []string{
 	}
