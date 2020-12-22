@@ -18,6 +18,7 @@ package cmd
 import (
 	"fmt"
 	"io/ioutil"
+	"strconv"
 	"strings"
 
 	"github.com/spf13/cobra"
@@ -40,9 +41,9 @@ to quickly create a Cobra application.`,
 
 		switch part {
 		case 1:
-			fmt.Printf("Reuslt: %v\n", Day17Part1(d))
+			fmt.Printf("Reuslt: %v\n", Day17Part1(d, 6))
 		case 2:
-			fmt.Printf("Reuslt: %v\n", Day17Part2(d))
+			fmt.Printf("Reuslt: %v\n", Day17Part2(d, 6))
 		}
 	},
 }
@@ -62,17 +63,9 @@ func init() {
 }
 
 // Day17Part1 good
-func Day17Part1(input []string) int {
+func Day17Part1(input []string, round int) int {
 	result := 0
 
-	// maze := [][][]string{}
-	// z := []int{0}
-	// y := [][]int{z}
-	// x := [][][]int{y}
-	// maze = append(maze)
-	// maze:=[][][]int{
-	// 	[[0,0]],
-	// }
 	maze := [][][]string{}
 	for _, itemx := range input {
 		y := [][]string{}
@@ -83,34 +76,147 @@ func Day17Part1(input []string) int {
 		}
 		maze = append(maze, y)
 	}
-	for cycle := 0; cycle < 1; cycle++ {
-		for x := 0; x < len(maze); x++ {
-			mazeY := [][]string{}
-			for y := 0; y < len(maze[x]); y++ {
-				mazeZ := []string{}
-				for z := 0; z < len(maze[x][y]); z++ {
+	for cycle := 0; cycle < round; cycle++ {
+		newMaze := [][][]string{}
+
+		sizeX, sizeY, sizeZ := len(maze), len(maze[0]), len(maze[0][0])
+		fmt.Printf("size: %vx%vx%v\n", sizeX, sizeY, sizeZ)
+		// printMaze(maze)
+
+		defaultCubesX := [][]string{}
+		defaultCubesY := []string{}
+
+		for x := 0; x < sizeX+2; x++ {
+			defaultCubesX = [][]string{}
+			for y := 0; y < sizeY+2; y++ {
+				defaultCubesY = []string{}
+				for z := 0; z < sizeZ+2; z++ {
+					if x > 0 && x <= sizeX &&
+						y > 0 && y <= sizeY &&
+						z > 0 && z <= sizeZ {
+						defaultCubesY = append(defaultCubesY, maze[x-1][y-1][z-1])
+					} else {
+						defaultCubesY = append(defaultCubesY, ".")
+					}
+				}
+				defaultCubesX = append(defaultCubesX, defaultCubesY)
+			}
+			newMaze = append(newMaze, defaultCubesX)
+		}
+
+		maze = myClone(newMaze)
+
+		for x := 0; x < len(newMaze); x++ {
+			for y := 0; y < len(newMaze[x]); y++ {
+				for z := 0; z < len(newMaze[x][y]); z++ {
+					activeCount := 0
 					for comb := 0; comb < 27; comb++ {
 						// mask := fmt.Sprintf("%03b", differ)
 						mask := int2TernaryStr(comb)
-						// for i := 0; i < 3; i++ {
-						// 	switch mask[i] {
-						// 	case '0':
+						dMask := []int{}
+						for _, item := range mask {
+							v, _ := strconv.Atoi(string(item))
+							dMask = append(dMask, v-1)
+						}
+						dx, dy, dz := dMask[0], dMask[1], dMask[2]
+						if dx == 0 && dy == 0 && dz == 0 {
+							continue
+						}
+						if x+dx < 0 || x+dx >= len(newMaze) {
+							continue
+						}
+						if y+dy < 0 || y+dy >= len(newMaze[x]) {
+							continue
+						}
+						if z+dz < 0 || z+dz >= len(newMaze[x][y]) {
+							continue
+						}
 
-						// 	case '1':
-						// 		for switchBit := -1; switchBit < 2; switchBit++ {
-						// 		}
-						// 	}
-						// }
+						if newMaze[x+dx][y+dy][z+dz] == "#" {
+							activeCount++
+						}
+					}
+
+					switch newMaze[x][y][z] {
+					case "#":
+						if activeCount == 2 || activeCount == 3 {
+							maze[x][y][z] = "#"
+						} else {
+							maze[x][y][z] = "."
+						}
+					case ".":
+						if activeCount == 3 {
+							maze[x][y][z] = "#"
+						} else {
+							maze[x][y][z] = "."
+						}
 					}
 				}
-				mazeY = append(mazeY, mazeZ)
 			}
-			maze = append(maze, mazeY)
+		}
+		// maze = newMaze
+	}
+	// for z := 0; z < len(maze[0][0]); z++ {
+	// 	fmt.Printf("for z=%v:\n", z)
+	// 	fmt.Printf("=======\n")
+	// 	for x := 0; x < len(maze); x++ {
+	// 		for y := 0; y < len(maze[x]); y++ {
+	// 			fmt.Printf("%v", maze[x][y][z])
+	// 		}
+	// 		fmt.Printf("\n")
+	// 	}
+	// 	fmt.Printf("=======\n")
+	// }
+	for x := 0; x < len(maze); x++ {
+		for y := 0; y < len(maze[x]); y++ {
+			for z := 0; z < len(maze[x][y]); z++ {
+				if maze[x][y][z] == "#" {
+					result++
+				}
+			}
 		}
 	}
-	fmt.Printf("%#v\n", maze)
 
 	return result
+}
+
+func myClone(maze [][][]string) [][][]string {
+	result := [][][]string{}
+	for i := 0; i < len(maze); i++ {
+		arri := [][]string{}
+		for j := 0; j < len(maze[i]); j++ {
+			arrj := []string{}
+			arrj = append(arrj, maze[i][j]...)
+			// for k := 0; k < len(maze[j]); k++ {
+			// 	arrj
+			// }
+			arri = append(arri, arrj)
+		}
+		result = append(result, arri)
+	}
+	return result
+}
+
+func printMaze(maze [][][]string) {
+	for z := 0; z < len(maze[0][0]); z++ {
+		fmt.Printf("for z=%v:\n", z)
+		fmt.Printf("=======\n")
+		for x := 0; x < len(maze); x++ {
+			for y := 0; y < len(maze[x]); y++ {
+				fmt.Printf("%v", maze[x][y][z])
+			}
+			fmt.Printf("\n")
+		}
+		fmt.Printf("=======\n")
+	}
+	// fmt.Printf("*********\n")
+	// for i := 0; i < len(maze); i++ {
+	// 	for j := 0; j < len(maze[i]); j++ {
+	// 		fmt.Printf("%#v\n", maze[i][j])
+	// 	}
+	// 	fmt.Printf("==============\n")
+	// }
+	// fmt.Printf("*********\n")
 }
 
 func int2TernaryStr(i int) string {
@@ -175,7 +281,7 @@ func int2TernaryStr(i int) string {
 }
 
 // Day17Part2 good
-func Day17Part2(input []string) int {
+func Day17Part2(input []string, round int) int {
 	result := 0
 	return result
 }
