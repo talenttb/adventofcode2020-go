@@ -1,0 +1,866 @@
+day20 called
+
+ID 3469 :
+top ->2239
+bottom ->1997
+left ->1621
+right ->3701
+
+ID 2239 :
+top ->1009
+bottom ->3469
+left ->2347
+right ->2687
+
+ID 2347 :
+top ->1823
+bottom ->1621
+left ->2657
+right ->2239
+
+ID 1621 :
+top ->2347
+bottom ->1429
+left ->3257
+right ->3469
+
+ID 1997 :
+top ->3469
+bottom ->2179
+left ->1429
+right ->1201
+
+ID 3701 :
+top ->2687
+bottom ->1201
+left ->3469
+right ->2833
+
+ID 2179 :
+top ->1997
+bottom ->3739
+left ->3919
+right ->3617
+
+ID 1009 :
+top ->
+bottom ->2239
+left ->1823
+right ->1913
+
+ID 2687 :
+top ->1913
+bottom ->3701
+left ->2239
+right ->2251
+
+ID 1823 :
+top ->
+bottom ->2347
+left ->2927
+right ->1009
+
+ID 2657 :
+top ->2927
+bottom ->3257
+left ->2693
+right ->2347
+
+ID 1429 :
+top ->1621
+bottom ->3919
+left ->2137
+right ->1997
+
+ID 3257 :
+top ->2657
+bottom ->2137
+left ->3467
+right ->1621
+
+ID 3919 :
+top ->1429
+bottom ->1847
+left ->2749
+right ->2179
+
+ID 2833 :
+top ->2251
+bottom ->1321
+left ->3701
+right ->
+
+ID 1201 :
+top ->3701
+bottom ->3617
+left ->1997
+right ->1321
+
+ID 1321 :
+top ->2833
+bottom ->1123
+left ->1201
+right ->
+
+ID 2251 :
+top ->3931
+bottom ->2833
+left ->2687
+right ->
+
+ID 3467 :
+top ->2693
+bottom ->2129
+left ->2549
+right ->3257
+
+ID 2749 :
+top ->2137
+bottom ->1093
+left ->2851
+right ->3919
+
+ID 3617 :
+top ->1201
+bottom ->2039
+left ->2179
+right ->1123
+
+ID 1847 :
+top ->3919
+bottom ->2621
+left ->1093
+right ->3739
+
+ID 2039 :
+top ->3617
+bottom ->3299
+left ->3739
+right ->3881
+
+ID 3739 :
+top ->2179
+bottom ->3217
+left ->1847
+right ->2039
+
+ID 2137 :
+top ->3257
+bottom ->2749
+left ->2129
+right ->1429
+
+ID 2927 :
+top ->
+bottom ->2657
+left ->2837
+right ->1823
+
+ID 1913 :
+top ->
+bottom ->2687
+left ->1009
+right ->3931
+
+ID 2693 :
+top ->2837
+bottom ->3467
+left ->3301
+right ->2657
+
+ID 2837 :
+top ->
+bottom ->2693
+left ->2081
+right ->2927
+
+ID 3299 :
+top ->2039
+bottom ->3511
+left ->3217
+right ->2539
+
+ID 3931 :
+top ->
+bottom ->2251
+left ->1913
+right ->
+
+ID 3217 :
+top ->3739
+bottom ->3559
+left ->2621
+right ->3299
+
+ID 1123 :
+top ->1321
+bottom ->3881
+left ->3617
+right ->
+
+ID 2081 :
+top ->
+bottom ->3301
+left ->2617
+right ->2837
+
+ID 3881 :
+top ->1123
+bottom ->2539
+left ->2039
+right ->
+
+ID 2539 :
+top ->3881
+bottom ->2999
+left ->3299
+right ->
+
+ID 1093 :
+top ->2749
+bottom ->1493
+left ->2293
+right ->1847
+
+ID 2549 :
+top ->3301
+bottom ->2957
+left ->1367
+right ->3467
+
+ID 2999 :
+top ->2539
+bottom ->1931
+left ->3511
+right ->
+
+ID 2621 :
+top ->1847
+bottom ->3557
+left ->1493
+right ->3217
+
+ID 2851 :
+top ->2129
+bottom ->2293
+left ->2309
+right ->2749
+
+ID 2129 :
+top ->3467
+bottom ->2851
+left ->2957
+right ->2137
+
+ID 2293 :
+top ->2851
+bottom ->1109
+left ->1801
+right ->1093
+
+ID 1931 :
+top ->2999
+bottom ->3709
+left ->2819
+right ->
+
+ID 2819 :
+top ->3511
+bottom ->2897
+left ->3943
+right ->1931
+
+ID 2309 :
+top ->2957
+bottom ->1801
+left ->1297
+right ->2851
+
+ID 3557 :
+top ->2621
+bottom ->1277
+left ->3457
+right ->3559
+
+ID 3301 :
+top ->2081
+bottom ->2549
+left ->2953
+right ->2693
+
+ID 3511 :
+top ->3299
+bottom ->2819
+left ->3559
+right ->2999
+
+ID 1277 :
+top ->3557
+bottom ->2131
+left ->2879
+right ->3943
+
+ID 1801 :
+top ->2309
+bottom ->2371
+left ->1459
+right ->2293
+
+ID 3559 :
+top ->3217
+bottom ->3943
+left ->3557
+right ->3511
+
+ID 2953 :
+top ->2617
+bottom ->1367
+left ->1091
+right ->3301
+
+ID 2897 :
+top ->2819
+bottom ->3727
+left ->1669
+right ->3709
+
+ID 1459 :
+top ->1297
+bottom ->2383
+left ->3329
+right ->1801
+
+ID 1109 :
+top ->2293
+bottom ->2803
+left ->2371
+right ->1493
+
+ID 3943 :
+top ->3559
+bottom ->1669
+left ->1277
+right ->2819
+
+ID 1493 :
+top ->1093
+bottom ->3457
+left ->1109
+right ->2621
+
+ID 2879 :
+top ->3457
+bottom ->3719
+left ->2339
+right ->1277
+
+ID 2617 :
+top ->
+bottom ->2953
+left ->2153
+right ->2081
+
+ID 2383 :
+top ->1459
+bottom ->3613
+left ->2729
+right ->2371
+
+ID 3457 :
+top ->1493
+bottom ->2879
+left ->2803
+right ->3557
+
+ID 1367 :
+top ->2953
+bottom ->2843
+left ->3391
+right ->2549
+
+ID 3391 :
+top ->1091
+bottom ->2551
+left ->1097
+right ->1367
+
+ID 2339 :
+top ->2803
+bottom ->1213
+left ->1867
+right ->2879
+
+ID 2957 :
+top ->2549
+bottom ->2309
+left ->2843
+right ->2129
+
+ID 1669 :
+top ->3943
+bottom ->2423
+left ->2131
+right ->2897
+
+ID 1297 :
+top ->2843
+bottom ->1459
+left ->2711
+right ->2309
+
+ID 2843 :
+top ->1367
+bottom ->1297
+left ->2551
+right ->2957
+
+ID 1091 :
+top ->2153
+bottom ->3391
+left ->1511
+right ->2953
+
+ID 2131 :
+top ->1277
+bottom ->1019
+left ->3719
+right ->1669
+
+ID 1511 :
+top ->1223
+bottom ->1097
+left ->3529
+right ->1091
+
+ID 3613 :
+top ->2383
+bottom ->3019
+left ->2647
+right ->2029
+
+ID 2371 :
+top ->1801
+bottom ->2029
+left ->2383
+right ->1109
+
+ID 3709 :
+top ->1931
+bottom ->3499
+left ->2897
+right ->
+
+ID 2551 :
+top ->3391
+bottom ->2711
+left ->1483
+right ->2843
+
+ID 1019 :
+top ->2131
+bottom ->1663
+left ->1471
+right ->2423
+
+ID 1223 :
+top ->
+bottom ->1511
+left ->2719
+right ->2153
+
+ID 2647 :
+top ->2729
+bottom ->1303
+left ->3677
+right ->3613
+
+ID 2153 :
+top ->
+bottom ->1091
+left ->1223
+right ->2617
+
+ID 1097 :
+top ->1511
+bottom ->1483
+left ->1031
+right ->3391
+
+ID 3727 :
+top ->2897
+bottom ->2203
+left ->2423
+right ->3499
+
+ID 1867 :
+top ->
+bottom ->1697
+left ->
+right ->2339
+
+ID 1213 :
+top ->2339
+bottom ->2593
+left ->1697
+right ->3719
+
+ID 2719 :
+top ->
+bottom ->3529
+left ->3343
+right ->1223
+
+ID 2729 :
+top ->3329
+bottom ->2647
+left ->3527
+right ->2383
+
+ID 2423 :
+top ->1669
+bottom ->2243
+left ->1019
+right ->3727
+
+ID 2803 :
+top ->1109
+bottom ->2339
+left ->2029
+right ->3457
+
+ID 3329 :
+top ->2711
+bottom ->2729
+left ->2017
+right ->1459
+
+ID 3719 :
+top ->2879
+bottom ->1471
+left ->1213
+right ->2131
+
+ID 2593 :
+top ->1213
+bottom ->3779
+left ->2477
+right ->1471
+
+ID 3779 :
+top ->2593
+bottom ->
+left ->1789
+right ->1733
+
+ID 3677 :
+top ->3527
+bottom ->3581
+left ->1579
+right ->2647
+
+ID 1303 :
+top ->2647
+bottom ->2557
+left ->3581
+right ->3019
+
+ID 2711 :
+top ->2551
+bottom ->3329
+left ->2521
+right ->1297
+
+ID 3499 :
+top ->3709
+bottom ->3323
+left ->3727
+right ->
+
+ID 3019 :
+top ->3613
+bottom ->1051
+left ->1303
+right ->
+
+ID 3529 :
+top ->2719
+bottom ->1031
+left ->2609
+right ->1511
+
+ID 1733 :
+top ->
+bottom ->
+left ->3779
+right ->
+
+ID 2557 :
+top ->1303
+bottom ->1753
+left ->1907
+right ->1051
+
+ID 2477 :
+top ->1697
+bottom ->1789
+left ->3923
+right ->2593
+
+ID 2029 :
+top ->2371
+bottom ->
+left ->3613
+right ->2803
+
+ID 1051 :
+top ->3019
+bottom ->
+left ->2557
+right ->
+
+ID 2243 :
+top ->2423
+bottom ->
+left ->1663
+right ->2203
+
+ID 2609 :
+top ->3343
+bottom ->3413
+left ->
+right ->3529
+
+ID 3527 :
+top ->2017
+bottom ->3677
+left ->3373
+right ->2729
+
+ID 1483 :
+top ->1097
+bottom ->2521
+left ->2437
+right ->2551
+
+ID 1579 :
+top ->3373
+bottom ->2887
+left ->1283
+right ->3677
+
+ID 1663 :
+top ->1019
+bottom ->
+left ->
+right ->2243
+
+ID 1753 :
+top ->2557
+bottom ->3517
+left ->2381
+right ->
+
+ID 1471 :
+top ->3719
+bottom ->
+left ->2593
+right ->1019
+
+ID 2203 :
+top ->3727
+bottom ->
+left ->2243
+right ->3323
+
+ID 1697 :
+top ->1867
+bottom ->2477
+left ->
+right ->1213
+
+ID 3413 :
+top ->2609
+bottom ->1453
+left ->
+right ->1031
+
+ID 1031 :
+top ->3529
+bottom ->2437
+left ->3413
+right ->1097
+
+ID 1789 :
+top ->2477
+bottom ->
+left ->1129
+right ->3779
+
+ID 3343 :
+top ->
+bottom ->2609
+left ->
+right ->2719
+
+ID 2437 :
+top ->1031
+bottom ->1229
+left ->1453
+right ->1483
+
+ID 3581 :
+top ->3677
+bottom ->1907
+left ->2887
+right ->1303
+
+ID 2521 :
+top ->1483
+bottom ->2017
+left ->1229
+right ->2711
+
+ID 2017 :
+top ->2521
+bottom ->3527
+left ->1447
+right ->3329
+
+ID 2381 :
+top ->1907
+bottom ->3659
+left ->1999
+right ->1753
+
+ID 1283 :
+top ->3803
+bottom ->2143
+left ->
+right ->1579
+
+ID 1453 :
+top ->3413
+bottom ->2267
+left ->
+right ->2437
+
+ID 1129 :
+top ->3923
+bottom ->
+left ->
+right ->1789
+
+ID 3373 :
+top ->1447
+bottom ->1579
+left ->3803
+right ->3527
+
+ID 3803 :
+top ->3989
+bottom ->1283
+left ->
+right ->3373
+
+ID 3323 :
+top ->3499
+bottom ->
+left ->2203
+right ->
+
+ID 1907 :
+top ->3581
+bottom ->2381
+left ->1777
+right ->2557
+
+ID 3923 :
+top ->
+bottom ->1129
+left ->
+right ->2477
+
+ID 3659 :
+top ->2381
+bottom ->
+left ->3169
+right ->3517
+
+ID 2887 :
+top ->1579
+bottom ->1777
+left ->2143
+right ->3581
+
+ID 3517 :
+top ->1753
+bottom ->
+left ->3659
+right ->
+
+ID 1777 :
+top ->2887
+bottom ->1999
+left ->1451
+right ->1907
+
+ID 1229 :
+top ->2437
+bottom ->1447
+left ->2267
+right ->2521
+
+ID 2143 :
+top ->1283
+bottom ->1451
+left ->
+right ->2887
+
+ID 1447 :
+top ->1229
+bottom ->3373
+left ->3989
+right ->2017
+
+ID 3169 :
+top ->1999
+bottom ->
+left ->3221
+right ->3659
+
+ID 1451 :
+top ->2143
+bottom ->3313
+left ->
+right ->1777
+
+ID 2267 :
+top ->1453
+bottom ->3989
+left ->
+right ->1229
+
+ID 3989 :
+top ->2267
+bottom ->3803
+left ->
+right ->1447
+
+ID 1999 :
+top ->1777
+bottom ->3169
+left ->3313
+right ->2381
+
+ID 3221 :
+top ->3313
+bottom ->
+left ->
+right ->3169
+
+ID 3313 :
+top ->1451
+bottom ->3221
+left ->
+right ->1999
+Reuslt: -3743265164212288133
