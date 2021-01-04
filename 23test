@@ -1,0 +1,6 @@
+=== RUN   TestDay23p1
+[]int{9, 1, 6, 7, 3, 8, 4, 5, 2}67384529    day23_test.go:10: Day23Part1() = 0
+--- FAIL: TestDay23p1 (0.00s)
+FAIL
+FAIL	adventofcode2020/cmd	0.009s
+FAIL
